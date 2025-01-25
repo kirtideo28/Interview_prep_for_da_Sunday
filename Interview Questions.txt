@@ -11,3 +11,4 @@ Additionally, I have worked on various ETL processes, where I handle the extract
 
 
 IQ2: How do you remove duplicate entry from multiple table using SQL ?
+Ans: To remove duplicate entries from a single table, you can use a ROW_NUMBER() function with a CTE to assign a row number to duplicate rows and then delete those with row numbers greater than 1. For removing duplicates across multiple tables, first identify matching rows using a JOIN, and then use the DELETE statement with an EXISTS clause to delete the duplicates from one of the tables. Always ensure you have a backup before performing these operations to prevent data loss. Also, indexing relevant columns can improve query performance significantly.
